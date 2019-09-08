@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="custom.css">
+
+    <title>Zadania z JavaScript</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<main class="col-12">
+    <h2>Wstęp</h2>
+
+    <p>Celem ćwiczeń jest stworzenie aplikacji edukacyjnej wspomagającej naukę tabliczki mnożenia (Quiz).</p>
+    <p>Końcowa wersja aplikacji będzie pozwalać na przeprowadzania krótkich sprawdzianów ze znajomości tabliczki.
+    Każdy sprawdzian (quiz) polega na zadaniu serii pytań, na które użytkownik musi udzielić odpowiedzi w ograniczonym
+        z góry czasie. Po zakończeniu quizu, aplikacja wyświetli ilość prawidłowych i błędnych odpowiedzi oraz wystawi
+        adekwatną ocenę.</p>
+
+    <h2>Lekcja 1</h2>
+
+    <p>Stwórz stronę, składającą się z 3 pól edycji oraz jednego przycisku - tak jak na
+    <a href="https://www.figma.com/proto/fPBZu6iRRtyVlCKsDOolJi/Lekcja-1?node-id=1%3A2&scaling=min-zoom">tym
+        szablonie</a>.</p>
+
+    <p>Dwa pierwsze pola powinny umożliwiać wprowadzanie tekstu, natomiast edycja ostatniego pola powinna być zablokowana.</p>
+
+    <p>Po wprowadzeniu liczb do dwóch pierwszych pól oraz naciśnięciu przycisku <code>Oblicz</code>, aplikacja powinna wyświetlić w
+        trzecim polu wyniku mnożenia wprowadzonych liczb.</p>
+
+    <div class="bd-callout bd-callout-warning">
+        <h5 class="alert-heading">Przypadek testowy</h5>
+        <ol>
+            <li>Wprowadź <code>6</code> do pierwszego pola
+            <li>Wprowadź <code>8</code> do drugiego pola
+            <li>Naciśnij przycisk <code>Oblicz</code>
+        </ol>
+        <h6>Oczekiwany rezultat:</h6>
+        <ul><li>W trzecim polu pojawiła się liczba 48</li></ul>
+    </div>
+
+    <div class="bd-callout bd-callout-info">
+        <h5 class="alert-heading">Wskazówki</h5>
+        <p>Na początku skup się na poprawnym wyświetleniu komponentów - korzystaj tylko z HTML i nie zaczynaj pisania kodu w
+            JavaScript, dopóki strona nie wyświetli się poprawnie.</p>
+        <p>Możliwość edycja pola kontrolowana jest poprzez atrybut readonly elementu input.</p>
+        <p>Nie koncentruj się na walidacji danych i obsłudze błędów - przyjmij, że w momencie naciśnięcia przycisku,
+            oba pola zawierają poprawne dane (liczby).</p>
+    </div>
+
+    <h2>Lekcja 2</h2>
+
+    <p>W tej lekcji, posłużymy się instrukcją warunkową (if), aby sprawdzić poprawność wprowadzonych danych. Po naciśnięciu
+    przycisku <code>Oblicz</code>, aplikacja sprawdzi czy oba pola zawierają liczby, a jeśli nie - w trzecim pole, zamiast
+    wyniku mnożenia zostanie wyświetlony znak "?".</p>
+
+    <div class="bd-callout bd-callout-warning">
+        <h5 class="alert-heading">Przypadek testowy 1</h5>
+        <ol>
+            <li>Pozostaw oba pole puste
+            <li>Naciśnij przycisk <code>Oblicz</code>
+        </ol>
+        <h6>Oczekiwany rezultat:</h6>
+        <ul><li>W trzecim polu pojawił się znak <code>?</code></li></ul>
+
+        <h5 class="alert-heading">Przypadek testowy 2</h5>
+        <ol>
+            <li>Wprowadź <code>8</code> do pierwszego pola
+            <li>Wprowadź tekst <code>dwa</code> do drugiego pola</li>
+            <li>Naciśnij przycisk <code>Oblicz</code>
+        </ol>
+        <h6>Oczekiwany rezultat:</h6>
+        <ul><li>W trzecim polu pojawił się znak <code>?</code></li></ul>
+
+        Nie zapomnij o przypadku z poprzedniego zadania, tzn. sprawdź czy aplikacja nadal działa po
+        wprowadzeniu poprawnych danych.
+    </div>
+
+</main>
+
+</body>
+</html>
