@@ -95,6 +95,36 @@
         wprowadzeniu poprawnych danych.
     </div>
 
+    <h2>Lekcja 3</h2>
+
+    <p>Do tej pory stworzyliśmy aplikację, która oblicza iloczyn liczb <em>podanych przez użytkownika</em>. W tej lekcji sprawimy, aby  aplikacja sama wybierała liczby, których iloczyn ponownie zostanie wyświetlony w ostatnim polu.</p>
+
+    <p>Zmień etykietę przycisku <code>Oblicz</code> na <code>Losuj</code> i zmień wszystkie pola na pola wyłącznie do odczytu. Spraw, by po naciśnięciu przycisku, aplikacja wylosowała dwie liczby z zakresu <code>1..10</code> i wyświetliła je w dwóch pierwszych polach. Trzecie pole, podobnie jak poprzednio, powinno wyświetlić iloczyn wylosowanych liczb.</p>
+
+    <div class="bd-callout bd-callout-info">
+        <h5 class="alert-heading">Wskazówki</h5>
+        <p>Aby wylosować liczbę, użyj funkcji <code>Math.random()</code> - przeczytaj 
+            <a href="https://www.w3schools.com/js/js_random.asp" target=_blank>dokumentację tej funkcji</a>, aby poznać jej działanie i przykłady użycia.</p>
+        <p>Podziel lekcję na mniejsze kroki, np. w pierwszym kroku skup się tylko na wyświetleniu wylosowanych liczb. Dopiero gdy ten krok
+            zostanie wykonany poprawnie, skup się na kolejnym, tzn. na wyświetleniu wyniku w trzecim polu.
+    </div>
+
+    <div class="bd-callout bd-callout-warning">
+        <h5 class="alert-heading">Przypadek testowy 1</h5>
+        <ol>
+            <li>Naciśnij przycisk <code>Losuj</code>
+        </ol>
+        <h6>Oczekiwany rezultat:</h6>
+        <ul><li>Aplikacja wyświetliła wygenerowane losowo liczby w dwóch pierwszych polach i wyświetliła ich iloczyn w trzecim polu</li></ul>
+
+        <h5 class="alert-heading">Przypadek testowy 2</h5>
+        <ol>
+            <li>Po naciśnięciu przycisku <code>Losuj</code> naciśnij ten przycisk ponownie
+        </ol>
+        <h6>Oczekiwany rezultat:</h6>
+        <ul><li>Wylosowane wcześniej liczby zostały zastąpione nowymi, a trzecie pole wyświetliło iloczyn nowo-wylosowanych liczb</li></ul>
+    </div>
+
 </main>
 
 </body>
