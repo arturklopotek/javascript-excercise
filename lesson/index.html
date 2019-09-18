@@ -161,6 +161,55 @@
         <p>Za każdym razem po wylosowaniu nowego pytania, zwiększaj wartość zmiennej globalnej o jeden i aktualizuj treść elementu wyświetlającego numer pytania.</p>
     </div>
 
+    <h2>Lekcja 6</h2>
+
+    <p>W tej lekcji pogłębimy interakcję użytkownika z aplikacją. Do tej pory aplikacja sama losowała działanie i obliczała jego wynik, natomiast teraz to użytkownik będzie musiał podać wynik iloczynu.</p>
+
+    <p>Odblokuj możliwość edycji trzeciego pola i zmień etykietę przycisku na <code>Dalej</code>. Po wylosowaniu liczb przez aplikację, ostatnie polo powinno pozostać puste, a rezultat naciśnięcia przycisku powinien być uzależniony od tego, czy użytkownik podał poprawną odpowiedź (wynik iloczynu). Jeśli wprowadzona odpowiedź jest poprawna - aplikacja powinna wylosować nowe liczby i wyczyścić pole odpowiedzi. Jeśli natomiast wprowadzono złą odpowiedź - naciśnięcie przycisku nie powinno robić nic, dopóki użytkownik nie poprawi odpowiedzi.</p>
+
+    <div class="bd-callout bd-callout-warning">
+        <h5 class="alert-heading">Przypadek testowy 1</h5>
+        <ol>
+            <li>Załaduj stronę
+            <li>Podaj nieprawidłową odpowiedź
+            <li>Naciśnij przycisk <code>Dalej</code>
+        </ol>
+        <h6>Oczekiwany rezultat:</h6>
+        <ul>
+            <li>Wyświetlane liczby nie zmieniają się. 
+            <li>Numer pytania nie zmienia się, tzn. cały czas wyświetlane jest <code>Pytanie 1</code>
+        </ul>
+        
+        <h5 class="alert-heading">Przypadek testowy 2</h5>
+        <ol>
+            <li>Załaduj stronę
+            <li>Podaj prawidłową odpowiedź
+            <li>Naciśnij przycisk <code>Dalej</code>
+        </ol>
+        <h6>Oczekiwany rezultat:</h6>
+        <ul>
+            <li>Wylosowana zostaje kolejna para liczb, a pole odpowiedzi zostaje wyczyszczone
+            <li>Numer pytania zwiększa się o jeden, tzn. wyświetlane jest <code>Pytanie 2</code>
+        </ul>
+    </div>
+
+    <h2>Lekcja 7</h2>
+
+    <p>Poprawimy teraz doznania użytkownika, poprzez odegranie odpowiedniego dźwięku, w zależności od tego czy udzielono poprawnej czy błędnej odpowiedzi.</p>
+
+    <p>Spraw, by po naciśnięciu przycisku, aplikacja odegrała dźwięk:
+        <ul>
+            <li><a href="https://freesound.org/data/previews/204/204983_97763-lq.mp3" target=_blank>poprawnej odpowiedzi</a></li>
+            <li><a href="https://freesound.org/data/previews/394/394230_1847127-lq.mp3" target=_blank>błędnej odpowiedzi</a></li>
+        </ul>
+    </p>
+
+    <div class="bd-callout bd-callout-info">
+        <h5 class="alert-heading">Wskazówki</h5>
+        <p>Żeby odegrać dźwięk, wystarczy skorzystać z metody <code>play()</code> należącej do klasy <code>Audio</code>.
+            Aby dowiedzieć się więcej, zobacz <a href="https://stackoverflow.com/a/18628124" target="_blank">przykład użycia</a>.</p>
+    </div>
+
 </main>
 
 </body>
