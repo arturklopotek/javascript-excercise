@@ -210,6 +210,64 @@
             Aby dowiedzieć się więcej, zobacz <a href="https://stackoverflow.com/a/18628124" target="_blank">przykład użycia</a>.</p>
     </div>
 
+    <h2>Lekcja 8</h2>
+
+    <p>Do tej pory nie liczyliśmy liczby poprawnych ani błędnych odpowiedzi. W tej lekcji dodamy te statystyki
+        i wyświetlimy je użytkownikowi.</p>
+
+    <p>W wybranym przez siebie miejscu ekranu, dodaj następujące statystyki:
+        <ul>
+            <li>Poprawne odpowiedzi</li>
+            <li>Błędy</li>
+            <li>Ocena</li>
+        </ul>
+    </p>
+
+    <p>Początkowo statystyki powinny wskazywać:
+        <ul>
+            <li>Poprawne odpowiedzi: 0</li>
+            <li>Błędy: 0</li>
+            <li>Ocena: -</li>
+        </ul>
+    </p>
+
+    <p>Przykładowe statystyki w trakcie trwania quizu:
+        <ul>
+            <li>Poprawne odpowiedzi: 3</li>
+            <li>Błędy: 1</li>
+            <li>Ocena: 75%</li>
+        </ul>
+    </p>
+
+    <p>Ocena, to procent poprawnych odpowiedzi w stosunku do wszystkich udzielonych odpowiedzi (poprawnych i błędnych). Czyli dla powyższego przykładu:<br>
+        <code>ocena = 3 / (3 + 1) = 3 / 4 = 75%</code></p>
+
+    <div class="bd-callout bd-callout-info">
+        <h5 class="alert-heading">Wskazówki</h5>
+        <p>Nie rób wszystkiego od razu - najpierw skup się na wyświetleniu wyłącznie liczby poprawnych odpowiedzi. Później kolejno dodawaj pozostałe informacje.</p>
+    </div>
+
+    <h2>Lekcja 9</h2>
+
+    <p>Spraw, by aplikację dało się wygodnie obsługiwać beż używania kursora ekranowego (myszki / touchpada).<p>
+    <p>1. Po wylosowaniu pytania (również bezpośrednio po załadowaniu aplikacji), aplikacja powinna umożliwiać wpisanie odpowiedzi - bez potrzeby klikana na pole odpowiedzi. 
+        Technicznie rzecz ujmując, pole odpowiedzi powinno uzyskać tzw. <code>focus</code> - tzn. powinien pojawić się w nim
+        migający kursor klawiatury.</p>
+    <p>2. Z drugiej strony, po udzieleniu odpowiedzi <em>błędnej</em>, tekst wpisany do pola odpowiedzi powinien zostać 
+        zaznaczony. Dzięki temu użytkownik może od razu podać kolejną odpowiedź, która zastąpi błędną - bez potrzeby
+        ręcznego wymazywania tekstu.</p>
+    <p>3. Zatwierdzenie odpowiedzi powinno być możliwe przez naciśnięcie klawisza <code>ENTER</code>.</p>
+
+    <div class="bd-callout bd-callout-info">
+        <h5 class="alert-heading">Wskazówki</h5>
+        <p>Przeczytaj dokumentację metod <code>HTMLInputElement.select()</code> 
+            oraz <code>HTMLElement.focus()</code> (zauważ: metoda <code>select()</code> jest dostępna tylko dla obiektów klasy
+            <code>HTMLInputElement</code>, natomiast metoda <code>focus()</code> jest dostępna dla 
+            obiektów klasy <code>HTMLElement</code>, czyli wszystkich elementów DOM).</p>
+        <p>Jeśli umieścisz wszystkie elementy <code>input</code> oraz <code>button</code> we wspólnym elemencie <code>form</code>, naciśnięcie klawisza <code>enter</code> w dowolnym miejscu wewnątrz formularza będzie automatycznie
+            naciskało na przycisk znajdujący się w formularzu (wywoła na nim zdarzenie <code>onclick</code>).
+    </div>
+
 </main>
 
 </body>
